@@ -7,4 +7,38 @@ html {
 /* khôi phục lại cỡ chữ mặc định theo rem */
 body {
   font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+/* ===========common============ */
+.main-content {
+  width: 1170px;
+  max-width: calc(100% - 48px);
+  margin-left: auto;
+  margin-right: auto;
+}
+a {
+  text-decoration: none;
+}
+/* ========header========== */
+.header .body {
+  display: flex;
+}
+.nav {
+  margin-left: auto;
+}
+.nav ul {
+  display: flex;
+}
+.nav a {
+  color: #5f5b53;
+  font-size: 1.6rem;
+  text-align: center;
+  padding: 8px 21px;
+}
+.nav a:hover {
+  color: black;
+  text-shadow: 1px 0 0 currentColor;
+}
+.nav li.active a::after {
+  content: ;
 }
