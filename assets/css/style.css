@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+:root {
+  --font-heading: "Sen", sans-serif;
+  --primary-color: #ffb900;
+}
 html {
   font-size: 62.5%;
 }
@@ -30,7 +34,10 @@ a {
   font-weight: 600;
   font-size: 1.6rem;
   text-align: center;
-  border-radius: 24.5px;
+  border-radius: 999px;
+}
+.btn:hover {
+  opacity: 0.9;
 }
 /* ========header========== */
 .header {
@@ -39,6 +46,7 @@ a {
 .header.fixed {
   position: sticky;
   top: -28px;
+  z-index: 1;
 }
 .header .body {
   display: flex;
@@ -78,7 +86,7 @@ a {
 .header .action {
   margin-left: 49px;
 }
-/* ==========hero=========== */
+/* ====================hero================== */
 .hero {
   padding: 56px 0 65px;
   background: #fffcf4;
@@ -86,12 +94,14 @@ a {
 .hero .body {
   display: flex;
 }
+/* ==================hero left=============== */
 .hero .media-block {
   width: 48%;
   position: relative;
 }
-.hero .content-block {
-  width: 52%;
+.hero .media-block .img {
+  width: 470px;
+  height: 685px;
 }
 
 .hero .hero-summary {
@@ -110,6 +120,7 @@ a {
   align-items: center;
 }
 .hero-summary .item + .item {
+  margin-top: 22px;
 }
 .hero-summary .icon {
   width: 48px;
@@ -140,3 +151,80 @@ a {
   font-weight: 600;
   line-height: 30px;
 }
+/* ============================hero right=================   */
+.hero .content-block {
+  width: 52%;
+  padding-left: 130px;
+  padding-top: 64px;
+}
+.hero .heading {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 5.8rem;
+  line-height: 1.17;
+  letter-spacing: -2%;
+  color: #171100;
+}
+.hero .desc {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  margin-top: 27px;
+}
+.hero .cta-group {
+  margin-top: 38px;
+  align-items: center;
+  display: flex;
+}
+.hero-cta {
+  min-width: 180px;
+  line-height: 64px;
+  background-color: var(--primary-color);
+}
+.hero .watch-video {
+  margin-left: 28px;
+  border: none;
+  display: flex;
+  background: transparent;
+  align-items: center;
+  cursor: pointer;
+}
+.hero .watch-video .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40;
+  height: 40;
+  top: 580px;
+  left: 1043px;
+  border-radius: 40px;
+  color: #ffffff;
+  box-shadow: 0px 8px 16px 0px #00000012;
+}
+.hero .watch-video span {
+  color: #171100;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 1.67;
+  margin-left: 14px;
+}
+.hero .desc-recent {a
+  margin-top: 48px;
+}
+.hero .stats{
+  margin-top: 8px;
+}
+.hero .stats strong {
+  margin-right: 15px;
+  color: #171100;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 4.4rem;
+  line-height: 54px;
+}
+.hero .stats strong:nth-child(2){
+    margin-left: 28px;
+}
+
