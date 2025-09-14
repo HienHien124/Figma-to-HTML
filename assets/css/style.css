@@ -544,6 +544,7 @@ a {
   justify-content: center;
   gap: 6px;
   margin-top: 38px;
+  padding-bottom: 96px;
 }
 .blogs .dot {
   width: 6px;
